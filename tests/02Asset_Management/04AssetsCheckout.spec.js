@@ -44,7 +44,7 @@ test("test", async ({ page }) => {
 
   await page.getByTestId("AM-AC-AAC-Duration-Start-Date").click();
   await page.waitForTimeout(800);
-  await page.getByRole("button", { name: "30" }).click();
+  await page.getByRole("button", { name: "17" }).click();
   await page.waitForTimeout(800);
   await page.getByTestId("AM-AC-AAC-Duration-End-Date").click();
 
