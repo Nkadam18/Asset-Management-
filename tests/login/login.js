@@ -1,4 +1,4 @@
-export const DASHBOARD = 'https://qa.d3kq8oy4csoq2n.amplifyapp.com/dashboard';
+export const DASHBOARD = 'https://platform.baap.company/dashboard';
 export class LoginPage {
   constructor(page) {
     this.page = page;
@@ -7,7 +7,7 @@ export class LoginPage {
   }
   async login() {
  
-    await this.page.goto('https://qa.d3kq8oy4csoq2n.amplifyapp.com/');
+    await this.page.goto('https://platform.baap.company/');
 
     await this.page.getByTestId('SI-username-input-password').click();
     await this.page.getByTestId('SI-username-input-password').fill('7058735643');
@@ -21,10 +21,10 @@ export class LoginPage {
     await this.page.getByTestId('SI-submit-button-show').click();
 
     await this.page.getByTestId('CG-search-input').click();
-    await this.page.getByTestId('CG-search-input').fill('cr');
+    await this.page.getByTestId('CG-search-input').fill('CRM App');
 
     await this.page
-      .getByTestId('CG-org-select-arrow-c92f8010-47b9-416b-a434-22cad830b8ef')
+      .getByTestId('CG-org-select-arrow-8f896e16-2a85-4b88-bca7-e3d16fea2889')
       .locator('path')
       .click();
 

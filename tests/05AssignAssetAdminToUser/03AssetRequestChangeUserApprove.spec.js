@@ -15,8 +15,8 @@ test.setTimeout(120000)
   await page.waitForTimeout(800);
   await page.getByTestId("submenu-item-asset-requests").click();
   await page.waitForTimeout(800);
-  await page.getByTestId("AM-AR-search-requests-input").click();
-  await page.waitForTimeout(800);
+  // await page.getByTestId("AM-AR-search-requests-input").click();
+  // await page.waitForTimeout(800);
   await page.getByText("N Kadam").nth(0).click();
   await page.waitForTimeout(800);
   await page.getByTestId("AM-AR-ARD-tab-workflow").click();

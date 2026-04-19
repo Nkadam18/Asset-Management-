@@ -17,7 +17,7 @@ test("test", async ({ page }) => {
   // await page.waitForTimeout(500);
   await page.getByTestId("AM-AL-user-input").click();
   // await page.waitForTimeout(500);
-  await page.getByRole("listitem").filter({ hasText: "Nagesh Kadam" }).click();
+  await page.getByRole("listitem").filter({ hasText: "Nagesh Sureshrao Kadam" }).click();
   // await page.waitForTimeout(500);
 
   /////////

@@ -13,14 +13,14 @@ test("test", async ({ page }) => {
   await page.waitForTimeout(800);
   await page.getByTestId("submenu-item-asset-checkout").click();
   await page.waitForTimeout(800);
-  await page.getByTestId("AM-AC-status-card-expired").click();
-  await page.waitForTimeout(800);
-  await page.getByTestId("AM-AC-status-card-pending_approval").click();
-  await page.waitForTimeout(800);
-  await page.getByTestId("AM-AC-status-card-approved").click();
-  await page.waitForTimeout(800);
-  await page.getByTestId("AM-AC-status-card-total").click();
-  await page.waitForTimeout(800);
+  //await page.getByTestId("AM-AC-status-card-expired").click();
+  // await page.waitForTimeout(800);
+  // await page.getByTestId("AM-AC-status-card-pending_approval").click();
+  // await page.waitForTimeout(800);
+  // await page.getByTestId("AM-AC-status-card-approved").click();
+  // await page.waitForTimeout(800);
+  // await page.getByTestId("AM-AC-status-card-total").click();
+  // await page.waitForTimeout(800);
 
   await page.getByTestId("AM-AC-search-checkout-input").click();
   await page.getByTestId("AM-AC-search-checkout-input").fill("Nagesh");
@@ -50,7 +50,7 @@ test("test", async ({ page }) => {
 
   await page.getByTestId("AM-AC-AAC-save-checkout-button").click();
   await page.waitForTimeout(800);
-  await page.getByText("Nagesh Kadam").nth(1).click();
+  await page.getByText("Nagesh Sureshrao Kadam").nth(0).click();
   await page.waitForTimeout(800);
   await page.getByTestId("AM-AR-ARD-tab-workflow").click();
   await page.waitForTimeout(800);

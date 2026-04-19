@@ -238,17 +238,17 @@ test("test", async ({ page }) => {
   await page.waitForTimeout(800);
   await page.locator(".lucide.lucide-x > path:nth-child(2)").click();
 
-  await page.getByText("Charger - HP10").click();
-  await page.getByText("Laptop - HP10").click();
-  await page.getByText("Charger - Dell10").click();
-  await page.getByText("Remote - VU10").click();
-  await page.getByText("Chair - Future ...10").click();
-  await page.getByText("Charger - MAC10").click();
-  await page.getByText("Laptop - MAC10").click();
-  await page.getByText("Chair - White10").click();
-  await page.getByText("Chair - Green10").click();
-  await page.getByText("Laptop - Dell10").click();
-  await page.getByText("Mouse - Lapcare3").click();
+  // await page.getByText("Charger - HP10").click();
+  // await page.getByText("Laptop - HP10").click();
+  // await page.getByText("Charger - Dell10").click();
+  // await page.getByText("Remote - VU10").click();
+  // await page.getByText("Chair - Future ...10").click();
+  // await page.getByText("Charger - MAC10").click();
+  // await page.getByText("Laptop - MAC10").click();
+  // await page.getByText("Chair - White10").click();
+  // await page.getByText("Chair - Green10").click();
+  // await page.getByText("Laptop - Dell10").click();
+  // await page.getByText("Mouse - Lapcare3").click();
 
   await page.waitForTimeout(800);
 

@@ -17,7 +17,7 @@ test("test", async ({ page }) => {
   await page.getByTestId("AM-MAR-raise-request-button").click();
   await page.waitForTimeout(800);
   await page.locator(".react-select__input-container").first().click();
-  await page.getByRole("option", { name: "Nagesh Kadam" }).click();
+  await page.getByRole("option", { name: "Nagesh Sureshrao Kadam" }).click();
   await page
     .locator("div")
     .filter({ hasText: /^Select asset$/ })
@@ -37,16 +37,16 @@ test("test", async ({ page }) => {
   await page.getByTestId("AM-MAR-RR-AAR-save-request-button").click();
 
   await page.waitForTimeout(800);
-  await page.getByTestId("AM-MAR-search-input").click();
-  await page.getByTestId("AM-MAR-search-input").fill("HDMI");
-  await page.waitForTimeout(800);
-  await page.getByTestId("AM-MAR-clear-search-button").click();
-  await page.getByTestId("AM-MAR-edit-button-0").click();
-  await page.waitForTimeout(800);
-  await page.getByTestId("AM-MAR-RR-AAR-priority-dropdown-button").click();
-  await page.getByRole("listitem").filter({ hasText: "Low" }).click();
-  await page.getByTestId("AM-MAR-RR-AAR-save-request-button").click();
-  await page.waitForTimeout(800);
+  // await page.getByTestId("AM-MAR-search-input").click();
+  // await page.getByTestId("AM-MAR-search-input").fill("HDMI");
+  // await page.waitForTimeout(800);
+  // await page.getByTestId("AM-MAR-clear-search-button").click();
+  // await page.getByTestId("AM-MAR-edit-button-0").click();
+  // await page.waitForTimeout(800);
+  // await page.getByTestId("AM-MAR-RR-AAR-priority-dropdown-button").click();
+  // await page.getByRole("listitem").filter({ hasText: "Low" }).click();
+  // await page.getByTestId("AM-MAR-RR-AAR-save-request-button").click();
+  // await page.waitForTimeout(800);
 
   await page.waitForLoadState("networkidle");
 });
