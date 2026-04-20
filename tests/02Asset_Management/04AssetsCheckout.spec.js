@@ -44,7 +44,7 @@ test("test", async ({ page }) => {
 
   await page.getByTestId("AM-AC-AAC-Duration-Start-Date").click();
   await page.waitForTimeout(800);
-  await page.getByRole("button", { name: "20" }).click();
+  await page.locator('//*[@id="root"]/div/div/div[3]/div/div[3]/div/div[4]/div/div[2]/div[3]/div/div[2]/div[2]/div[3]/button[23]').click();
   await page.waitForTimeout(800);
   await page.getByTestId("AM-AC-AAC-Duration-End-Date").click();
 
